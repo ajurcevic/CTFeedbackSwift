@@ -64,11 +64,16 @@ public class FeedbackViewController: UITableViewController {
         updateDataSource(configuration: configuration)
 
         title = CTLocalizedString("CTFeedback.Feedback")
+//        navigationItem
+//            .rightBarButtonItem = UIBarButtonItem(title: CTLocalizedString("CTFeedback.Mail"),
+//                                                  style: .plain,
+//                                                  target: self,
+//                                                  action: #selector(mailButtonTapped(_:)))
         navigationItem
-            .rightBarButtonItem = UIBarButtonItem(title: CTLocalizedString("CTFeedback.Mail"),
-                                                  style: .plain,
-                                                  target: self,
-                                                  action: #selector(mailButtonTapped(_:)))
+            .rightBarButtonItem = UIBarButtonItem(image: UIImage.init(named: "mail"),
+                                                            style: .plain,
+                                                            target: self,
+                                                            action: #selector(mailButtonTapped(_:)))
     }
 
     public override func viewWillAppear(_ animated: Bool) {
