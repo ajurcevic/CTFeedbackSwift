@@ -9,7 +9,7 @@ public struct TopicItem: FeedbackItemProtocol {
     public static var defaultTopics: [TopicProtocol] {
         return [Topic.question,
                 Topic.request,
-                Topic.bugReport,
+                //Topic.bugReport,
                 Topic.other]
     }
 
