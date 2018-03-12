@@ -21,13 +21,13 @@ public class FeedbackItemsDataSource {
         sections.append(FeedbackItemsSection(items: [TopicItem(topics), BodyItem()]))
         sections.append(FeedbackItemsSection(title: CTLocalizedString("CTFeedback.AdditionalInfo"),
                                              items: [AttachmentItem(isHidden: hidesAttachmentCell)]))
-        sections.append(FeedbackItemsSection(title: CTLocalizedString("CTFeedback.DeviceInfo"),
-                                             items: [DeviceNameItem(),
-                                                     SystemVersionItem()]))
-        sections.append(FeedbackItemsSection(title: CTLocalizedString("CTFeedback.AppInfo"),
-                                             items: [AppNameItem(isHidden: hidesAppInfoSection),
-                                                     AppVersionItem(isHidden: hidesAppInfoSection),
-                                                     AppBuildItem(isHidden: hidesAppInfoSection)]))
+//        sections.append(FeedbackItemsSection(title: CTLocalizedString("CTFeedback.DeviceInfo"),
+//                                             items: [DeviceNameItem(),
+//                                                     SystemVersionItem()]))
+//        sections.append(FeedbackItemsSection(title: CTLocalizedString("CTFeedback.AppInfo"),
+//                                             items: [AppNameItem(isHidden: hidesAppInfoSection),
+//                                                     AppVersionItem(isHidden: hidesAppInfoSection),
+//                                                     AppBuildItem(isHidden: hidesAppInfoSection)]))
     }
 
     func section(at section: Int) -> FeedbackItemsSection {
